@@ -21,10 +21,7 @@
     },
     "production": {
       "android": {
-        "buildType": "aab"
-      },
-      "ios": {
-        "bundleIdentifier": "com.sendit.app"
+        "buildType": "app-bundle"
       }
     }
   },
