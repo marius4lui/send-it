@@ -1,25 +1,62 @@
 {
   "expo": {
-    "name": "send-it",
+    "name": "Send-It",
     "slug": "send-it",
     "version": "1.0.0",
+    "description": "Save and organize your favorite videos from Instagram, TikTok & YouTube in beautiful collections",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "sendit",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "intentFilters": [
+      {
+        "action": "VIEW",
+        "autoVerify": true,
+        "data": [
+          {
+            "scheme": "https",
+            "host": "*.instagram.com",
+            "pathPrefix": "/"
+          },
+          {
+            "scheme": "https",
+            "host": "*.tiktok.com",
+            "pathPrefix": "/"
+          },
+          {
+            "scheme": "https",
+            "host": "*.youtube.com",
+            "pathPrefix": "/"
+          },
+          {
+            "scheme": "https",
+            "host": "youtu.be",
+            "pathPrefix": "/"
+          }
+        ],
+        "category": ["BROWSABLE", "DEFAULT"]
+      }
+    ],
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "package": "com.sendit.app",
+      "versionCode": 1,
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#3B82F6",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "INTERNET",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
     },
     "web": {
       "output": "static",
