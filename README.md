@@ -39,6 +39,7 @@ pnpm android
 # Run on iOS
 pnpm ios
 
+```
 
 ---
 
@@ -62,6 +63,7 @@ pnpm ios
 
 🏗️ Build for Android
 
+```bash
 # Install EAS CLI
 npm install -g eas-cli
 
@@ -72,8 +74,7 @@ eas login
 eas build --platform android --profile preview
 
 See BUILD_INSTRUCTIONS.md for details.
-
-
+```
 ---
 
 📚 Documentation
